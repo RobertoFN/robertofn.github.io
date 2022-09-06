@@ -10,16 +10,30 @@
             top:0em;
         }
         
-        .bkgd{
+        .main_container{
             background-color: rgb(200,200,200,0.25);
-            width: 95%;
+            width: 75%;
             height: 93%;
             z-index: 0;
-            position: absolute;
-            top: 50%;
+            position: fixed;
+            left:22.5%;
+            top:50%;
+            border-top-right-radius: 1vw;
+            border-bottom-right-radius: 1vw;
+            transform: translate(0%, -50%);
+        }
+        
+        .main_container.slideshow{
+            position: relative;
+        }
+
+        .main_container img{
+            position: relative;
+            width: 85%;
+            height: auto;
+            top: 20%;
             left: 50%;
-            border-radius: 0.75em;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -20%);
         }
 
         .sidebar h1, p{
@@ -112,7 +126,11 @@
         </div>
     </div>
     
-    <div class="bkgd"></div>
+    <div class="main_container">
+    <div class="slideshow">
+        <img id = 'sentiment_img' src="sent.png" alt="sentiment">
+    </div>
+    </div>
 
 </body>
 </html>
