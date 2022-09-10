@@ -134,8 +134,8 @@ p{
 
 .icons img{
     display: inline-block;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    margin-left: 4%;
+    margin-right: 4%;
     width: 2rem;
     height: auto;
     border-radius: 50%;
@@ -153,6 +153,12 @@ p{
 .icons #linkedin_icon:hover{
     background-color: #75cfff;
     border: 2px solid #75cfff;
+    transform: scale(1.15);
+}
+
+.icons #email_icon:hover{
+    background-color: #f59090;
+    border: 2px solid #f59090;
     transform: scale(1.15);
 }
 
