@@ -1,136 +1,129 @@
 <html lang="en">
-    <style>
-        .sidebar{
-            background-color: rgb(10, 10, 10);
-            width: 22.5%;
-            height: 100%;
-            z-index: 1;
-            position: fixed;
-            left: 0em;
-            top:0em;
-        }
-        
-        .main_container{
-            background-color: rgb(200,200,200,0.25);
-            width: 75%;
-            height: 93%;
-            z-index: 0;
-            position: fixed;
-            left:22.5%;
-            top:50%;
-            border-top-right-radius: 1vw;
-            border-bottom-right-radius: 1vw;
-            transform: translate(0%, -50%);
-        }
-        
-        .main_container.slideshow{
-            position: relative;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="'viewport" content="width=device-width, initial-scale=1.0">
 
-        .main_container img{
-            position: relative;
-            width: 85%;
-            height: auto;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -20%);
-        }
 
-        .sidebar h1, p{
-            color: rgb(255, 255, 255);
-            font-family: Arial, Helvetica, sans-serif;
-            padding-left: 10%;
-        }
-
-        .sidebar h1{
-            font-size:4.5vw;
-        }
-
-        .sidebar p{
-            margin-bottom: 5%;
-            font-size:1vw;
-        }
-
-        #sidebar_links{
-            color: rgb(181, 255, 112);
-            font-family: Arial, Helvetica, sans-serif;
-            padding-left: 10%;
-            padding-top: 1em;
-            padding-bottom: 1em;
-            text-decoration: none;
-            display: block;
-            font-size:1.25vw;
-        }
-
-        .sidebar span:hover{
-            color: rgb(76, 143, 14);
-        }
-
-        #my_photo {
-            display: block;
-            margin-top: 5vw;
-            margin-left: auto;
-            margin-right: auto;
-            width: 60%;
-            border-radius: 1em;
-            /* border: 2px solid rgb(255, 255, 255); */
-        }
-
-        .icons{
-            position: relative;
-            bottom:0em;
-            margin-top: 20%;
-            margin-bottom: 5%;
-            text-align: center;
-        }
-
-        .icons img{
-            display: inline-block;
-            margin-left: 1.5vw;
-            margin-right: 1.5vw;
-            width: 12.5%;
-            border-radius: 50%;
-            background-color: rgb(255, 255, 255); 
-            border: 2px solid rgb(255, 255, 255);
-        }
-
-        .icons #github_icon:hover{
-            background-color: #d3b6ff;
-            border: 2px solid #d3b6ff;
-        }
-
-        .icons #linkedin_icon:hover{
-            background-color: #75cfff;
-            border: 2px solid #75cfff;
-        }
-
-        
-
-    </style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roberto Frias Portfolio</title>
 </head>
+
 <body>
     <div class="sidebar">
-        <img id='my_photo' src="my_picture.jpeg" alt="That's me">
-        <h1>Roberto Frias</h1>
+        <img id='my_photo' src="my_picture_gray.jpeg" alt="That's me">
+        <h1>ROBERTO FRIAS</h1>
         <!-- <a id="sidebar_links" href="projects.html" target="_blank"><span>Projects</span></a> -->
-        <p>Data Analysis<br>Python<br></p>
+        <p><span class="emp_txt">Mechatronic Engineer working in software development.</span> Some of my interests include data analysis, machine learning and web development. Knowledge in Python, SQL, HTML and CSS.</p>
 
         <div class="icons">
             <a href="https://github.com/RobertoFN" target="_blank"><span><img id="github_icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmM1LjUxNCAwIDEwIDQuNDg2IDEwIDEwcy00LjQ4NiAxMC0xMCAxMC0xMC00LjQ4Ni0xMC0xMCA0LjQ4Ni0xMCAxMC0xMHptMC0yYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem0wIDZjLTMuMzEzIDAtNiAyLjY4Ni02IDYgMCAyLjY1MSAxLjcxOSA0LjkgNC4xMDQgNS42OTMuMy4wNTYuMzk2LS4xMy4zOTYtLjI4OXYtMS4xMTdjLTEuNjY5LjM2My0yLjAxNy0uNzA3LTIuMDE3LS43MDctLjI3Mi0uNjkzLS42NjYtLjg3OC0uNjY2LS44NzgtLjU0NC0uMzczLjA0MS0uMzY1LjA0MS0uMzY1LjYwMy4wNDIuOTIuNjE5LjkyLjYxOS41MzUuOTE3IDEuNDAzLjY1MiAxLjc0Ni40OTkuMDU0LS4zODguMjA5LS42NTIuMzgxLS44MDItMS4zMzMtLjE1Mi0yLjczMy0uNjY3LTIuNzMzLTIuOTY1IDAtLjY1NS4yMzQtMS4xOS42MTgtMS42MS0uMDYyLS4xNTMtLjI2OC0uNzY0LjA1OC0xLjU5IDAgMCAuNTA0LS4xNjEgMS42NS42MTUuNDc5LS4xMzMuOTkyLS4xOTkgMS41MDItLjIwMi41MS4wMDIgMS4wMjMuMDY5IDEuNTAzLjIwMiAxLjE0Ni0uNzc2IDEuNjQ4LS42MTUgMS42NDgtLjYxNS4zMjcuODI2LjEyMSAxLjQzNy4wNiAxLjU4OC4zODUuNDIuNjE3Ljk1NS42MTcgMS42MSAwIDIuMzA1LTEuNDA0IDIuODEyLTIuNzQgMi45Ni4yMTYuMTg2LjQxMi41NTEuNDEyIDEuMTExdjEuNjQ2YzAgLjE2LjA5Ni4zNDcuNC4yODggMi4zODMtLjc5MyA0LjEtMy4wNDEgNC4xLTUuNjkxIDAtMy4zMTQtMi42ODctNi02LTZ6Ii8+PC9zdmc+"></span></a>
             <a href="https://www.linkedin.com/in/roberto-frias/" target="_blank"><span><img id="linkedin_icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmM1LjUxNCAwIDEwIDQuNDg2IDEwIDEwcy00LjQ4NiAxMC0xMCAxMC0xMC00LjQ4Ni0xMC0xMCA0LjQ4Ni0xMCAxMC0xMHptMC0yYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem0tMiA4YzAgLjU1Ny0uNDQ3IDEuMDA4LTEgMS4wMDhzLTEtLjQ1LTEtMS4wMDhjMC0uNTU3LjQ0Ny0xLjAwOCAxLTEuMDA4czEgLjQ1MiAxIDEuMDA4em0wIDJoLTJ2Nmgydi02em0zIDBoLTJ2Nmgydi0yLjg2MWMwLTEuNzIyIDIuMDAyLTEuODgxIDIuMDAyIDB2Mi44NjFoMS45OTh2LTMuMzU5YzAtMy4yODQtMy4xMjgtMy4xNjQtNC0xLjU0OHYtMS4wOTN6Ii8+PC9zdmc+"></span></a>
         </div>
     </div>
-    <!--
-    <div class="main_container">
-    <div class="slideshow">
-        <img id = 'sentiment_img' src="sent.png" alt="sentiment">
+    <div class="tabs">
+        <span class="tab" id="t1" onclick="currentTab(0)">Projects</span>
+        <span class="tab" id="t2" onclick="currentTab(1)">About</span>
     </div>
+    <div class="tab_content" id="projects_tab">
+        <div class="slideshow">
+            <div class='proj_img'>
+                <img id = 'a_img' src="a.png" alt="a">
+                <div class='img_txt'>
+                    <h2 id="img_txt">Stock Sentiment Analysis</h2>
+                    <p>This tool was built by combining Web Scrapping, Natural Language Processing and Stock Market APIs. It can analyze the NYSE-traded stock symbols most discussed in social media the past week, and analyze people's comments to determine whether the overall sentiment is positive/neutral/negative.</p>
+                </div>
+            </div>
+
+            <div class='proj_img'>
+                <img id = 'b_img' src="b.png" alt="b">
+                <div class='img_txt'>
+                    <h2>Hi</h2>
+                </div>
+            </div>
+
+            <div class='proj_img'>
+                <!-- <img id = 'c_img' src="c.png" alt="c"> -->
+                <div class='img_txt' id="other_projects">
+                    <h2>Professional Work</h2>
+                    <p>Working on software development since Nov. 2021. Responsible for frontend and backend development of an internal web application used by 50+ people at a world-renowned company. Backend built with Python + SQL, frontend built using a Python library (Streamlit) + custom HTML/CSS. Lead efforts to adopt a Gitflow workflow, responsible for maintaining project repository. Currently developing automated tests using Selenium framework.</p>
+                    
+                    <h2>Academic Work</h2>
+                    <p>Master Thesis focused on analysis of composite materials by way of virtual experiments. Machine learning models (Neural Networks) where used to enable the study of behaviours almost impossible to replicate under laboratoty conditions. Optimization algorithms were used to fine-tune parameters for our needs. Matlab and Python code was developed to deal with ML models, virtual experimentation and handling extensive amounts of data.</p>
+                    
+                </div>
+            </div>    
+        </div>
+        <div class="prevnext">
+            <a class="prev" onclick="currentView(-1)">&#8226;</a>
+            <a class="next" onclick="currentView(1)">&#8226;</a>
+        </div>
+        <div class = 'dots'>
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
     </div>
--->
+
+    <div class="tab_content" id="about_tab">
+        <div>
+            <h2>Hello there</h2>
+        </div>
+    </div>
+
+    <div class="icons_mobile">
+        <a href="https://github.com/RobertoFN" target="_blank"><span><img id="github_icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmM1LjUxNCAwIDEwIDQuNDg2IDEwIDEwcy00LjQ4NiAxMC0xMCAxMC0xMC00LjQ4Ni0xMC0xMCA0LjQ4Ni0xMCAxMC0xMHptMC0yYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem0wIDZjLTMuMzEzIDAtNiAyLjY4Ni02IDYgMCAyLjY1MSAxLjcxOSA0LjkgNC4xMDQgNS42OTMuMy4wNTYuMzk2LS4xMy4zOTYtLjI4OXYtMS4xMTdjLTEuNjY5LjM2My0yLjAxNy0uNzA3LTIuMDE3LS43MDctLjI3Mi0uNjkzLS42NjYtLjg3OC0uNjY2LS44NzgtLjU0NC0uMzczLjA0MS0uMzY1LjA0MS0uMzY1LjYwMy4wNDIuOTIuNjE5LjkyLjYxOS41MzUuOTE3IDEuNDAzLjY1MiAxLjc0Ni40OTkuMDU0LS4zODguMjA5LS42NTIuMzgxLS44MDItMS4zMzMtLjE1Mi0yLjczMy0uNjY3LTIuNzMzLTIuOTY1IDAtLjY1NS4yMzQtMS4xOS42MTgtMS42MS0uMDYyLS4xNTMtLjI2OC0uNzY0LjA1OC0xLjU5IDAgMCAuNTA0LS4xNjEgMS42NS42MTUuNDc5LS4xMzMuOTkyLS4xOTkgMS41MDItLjIwMi41MS4wMDIgMS4wMjMuMDY5IDEuNTAzLjIwMiAxLjE0Ni0uNzc2IDEuNjQ4LS42MTUgMS42NDgtLjYxNS4zMjcuODI2LjEyMSAxLjQzNy4wNiAxLjU4OC4zODUuNDIuNjE3Ljk1NS42MTcgMS42MSAwIDIuMzA1LTEuNDA0IDIuODEyLTIuNzQgMi45Ni4yMTYuMTg2LjQxMi41NTEuNDEyIDEuMTExdjEuNjQ2YzAgLjE2LjA5Ni4zNDcuNC4yODggMi4zODMtLjc5MyA0LjEtMy4wNDEgNC4xLTUuNjkxIDAtMy4zMTQtMi42ODctNi02LTZ6Ii8+PC9zdmc+"></span></a>
+        <a href="https://www.linkedin.com/in/roberto-frias/" target="_blank"><span><img id="linkedin_icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmM1LjUxNCAwIDEwIDQuNDg2IDEwIDEwcy00LjQ4NiAxMC0xMCAxMC0xMC00LjQ4Ni0xMC0xMCA0LjQ4Ni0xMCAxMC0xMHptMC0yYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem0tMiA4YzAgLjU1Ny0uNDQ3IDEuMDA4LTEgMS4wMDhzLTEtLjQ1LTEtMS4wMDhjMC0uNTU3LjQ0Ny0xLjAwOCAxLTEuMDA4czEgLjQ1MiAxIDEuMDA4em0wIDJoLTJ2Nmgydi02em0zIDBoLTJ2Nmgydi0yLjg2MWMwLTEuNzIyIDIuMDAyLTEuODgxIDIuMDAyIDB2Mi44NjFoMS45OTh2LTMuMzU5YzAtMy4yODQtMy4xMjgtMy4xNjQtNC0xLjU0OHYtMS4wOTN6Ii8+PC9zdmc+"></span></a>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function currentView(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("proj_img");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+
+        let tabIndex = 0;
+        currentTab(tabIndex)
+        function currentTab(n){
+            let i;
+            let tabs = document.getElementsByClassName("tab");
+            let tab_cont = document.getElementsByClassName("tab_content")
+            for (i = 0; i < tab_cont.length; i++) {
+                tab_cont[i].style.display = "none";  
+            }
+            for (i=0; i < tabs.length; i++){
+                tabs[i].className = tabs[i].className.replace(" active", "");
+            }
+            tab_cont[n].style.display = 'block'
+            tabs[n].className += " active"
+        }
+        </script>
+
 </body>
 </html>
