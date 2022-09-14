@@ -66,7 +66,7 @@ p{
 
 .tab_content{
     background-color: rgb(15,15,15,0);
-    width: 72.5%;
+    width: 74.5%;
     height: 100%;
     z-index: 0;
     position: fixed;
@@ -95,9 +95,13 @@ p{
 #about_tab div{
     position:relative;
     width:80%;
-    margin-top:5vw;
     margin-left:auto;
     margin-right: auto;
+}
+.about_txt{
+    position: absolute;
+    top:40%;
+    transform: translate(0%, -40%);
 }
 
 .sidebar p{
