@@ -124,6 +124,15 @@ p{
     /* filter: grayscale(100%); */
 }
 
+/* .slideshow img{
+    transition: transform 0.15s linear;
+}
+
+.slideshow img:hover{
+    transform: scale(1.01);
+} */
+
+
 .icons{
     position: absolute;
     bottom:0em;
